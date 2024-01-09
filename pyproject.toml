@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "text_extraction"
+version = "0.1.0"
+description = ""
+authors = ["dev <nlp@thedeep.io>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4"
+urllib3 = ">=1.25.4,<1.27"
+langchain = "^0.0.287"
+tiktoken = "^0.5.1"
+openai = "^0.28.0"
+psycopg2-binary = "^2.9.7"
+python-dotenv = "^1.0.0"
+matplotlib = "^3.7.3"
+the_deep_reports_generator = { git = "https://github.com/the-deep-nlp/the-deep-reports-generator", rev = "e371d31", branch = "main" }
+
+[tool.poetry.dev-dependencies]
+ipykernel = "^6.25.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.28.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
